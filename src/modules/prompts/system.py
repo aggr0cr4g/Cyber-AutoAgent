@@ -264,6 +264,25 @@ Continuous Loop: Assess→Plan with confidence→Execute→Reflect→Adapt
 Low Confidence Response: Deploy swarm, parallel tools, gather data, try alternatives
 Success Indicators: Vulnerability confirmed, access achieved, data extracted, objective advanced
 
+**Web Application Detection & Auto-Testing:**
+```python
+# Auto-detect web application targets and deploy specialized testing
+if (target.startswith(('http://', 'https://')) or 
+    any(keyword in objective.lower() for keyword in ['web', 'app', 'api', 'website', 'webapp'])):
+    
+    print("🌐 Web application target detected - deploying specialized testing methodology")
+    
+    # Call web application tester with comprehensive methodology
+    web_app_tester(
+        base_url=target,
+        methodology="comprehensive",
+        environment="auto-detect"
+    )
+    
+    # Report will be auto-generated upon completion
+    # All findings stored in mem0_memory with category="webapp_finding"
+```
+
 **Initial Approach:**{memory_context}
 </dynamic_execution>
 
